@@ -1,0 +1,37 @@
+:root:has(.mood:checked){
+    
+    --color-default: #fff;
+    --color-secondary: #fff;
+    --color-tertiary: #9f9f9f;
+    --color-light:#171717;
+    --color-light2:#202020;
+    --color-light3:#171717;
+    --color-light-grey: #252525;
+    --color-primary: hsl(35, 72%, 44%);
+    --hover-bg-color: hsl(35, 72%, calc(44% + 5%));
+    --hover-color: #ffffff;
+    
+}
+:root:has(.mode:checked) {
+    /* --primary-hue: 35;
+    --primary-lightness: 44%;
+    --primary-saturation: 72%;
+    --light-hue: 0;
+    --light-saturation: 0%;
+    --light-lightness: 9%; */
+    
+  
+  }
+  
+  :root:has(.mode:checked) .chefs-cards .card picture:before {
+    background-image: url("../img/team-shape-dark.svg");
+  }
+  
+
+:root:has(.mood:checked) .moon{
+    display: none;
+}
+:root:has(.mood:checked) .sun{
+    display: block;
+}
+
